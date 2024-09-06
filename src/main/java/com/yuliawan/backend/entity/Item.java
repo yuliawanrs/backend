@@ -41,9 +41,7 @@ public class Item {
                 stock.set(stock.get() - i.getQty());
             }
         });
-        this.order.forEach(o -> {
-            stock.set(stock.get() - o.getQty());
-        });
+        this.order.forEach(o -> stock.set(stock.get() - o.getQty()));
         return stock.get();
     }
 }

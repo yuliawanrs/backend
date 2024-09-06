@@ -5,8 +5,6 @@ import com.yuliawan.backend.entity.Item;
 import com.yuliawan.backend.repository.InventoryRepository;
 import com.yuliawan.backend.repository.ItemRepository;
 import com.yuliawan.backend.request.InventoryRequest;
-import com.yuliawan.backend.request.ItemRequest;
-import com.yuliawan.backend.service.InventoryService;
 import jakarta.persistence.NoResultException;
 import jakarta.persistence.NonUniqueResultException;
 import org.junit.Test;
@@ -127,7 +125,7 @@ public class InventoryServiceImplTests {
 
         Page<Inventory> itemChecked = inventoryService.findAll(0);
 
-        assertEquals(itemChecked, null);
+        assertNull(itemChecked);
     }
 
     @Test

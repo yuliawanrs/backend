@@ -5,12 +5,9 @@ import com.yuliawan.backend.entity.Item;
 import com.yuliawan.backend.entity.Order;
 import com.yuliawan.backend.repository.ItemRepository;
 import com.yuliawan.backend.repository.OrderRepository;
-import com.yuliawan.backend.request.InventoryRequest;
 import com.yuliawan.backend.request.OrderRequest;
-import com.yuliawan.backend.service.OrderService;
 import jakarta.persistence.NoResultException;
 import jakarta.persistence.NonUniqueResultException;
-import org.aspectj.weaver.ast.Or;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.ArgumentMatchers;
@@ -29,7 +26,6 @@ import java.util.List;
 import java.util.Optional;
 
 import static org.junit.Assert.*;
-import static org.junit.Assert.assertThrows;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest

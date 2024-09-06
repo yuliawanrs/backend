@@ -1,8 +1,6 @@
 package com.yuliawan.backend.service;
 
-import com.yuliawan.backend.entity.Inventory;
 import com.yuliawan.backend.entity.Order;
-import com.yuliawan.backend.request.InventoryRequest;
 import com.yuliawan.backend.request.OrderRequest;
 import jakarta.persistence.NoResultException;
 import jakarta.persistence.NonUniqueResultException;

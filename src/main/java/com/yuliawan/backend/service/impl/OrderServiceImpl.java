@@ -1,6 +1,5 @@
 package com.yuliawan.backend.service.impl;
 
-import com.yuliawan.backend.entity.Inventory;
 import com.yuliawan.backend.entity.Item;
 import com.yuliawan.backend.entity.Order;
 import com.yuliawan.backend.repository.ItemRepository;
